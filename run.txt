@@ -1,0 +1,5 @@
+cd ~/painting/flux
+conda activate painting
+$Env:TURBO_LNM="C:\Users\Dataland Control\painting\FLUX-LNM-turbo\turbo_lnm.safetensors"
+$Env:AE="C:\Users\Dataland Control\painting\FLUX-LNM-turbo\ae.safetensors"
+streamlit run demo_st.py
