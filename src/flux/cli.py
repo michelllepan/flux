@@ -5,7 +5,8 @@ from dataclasses import dataclass
 from glob import iglob
 
 import torch
-from cuda import cudart
+# from cuda import cudart
+from cuda.bindings import runtime as cudart
 from fire import Fire
 from transformers import pipeline
 

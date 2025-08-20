@@ -21,7 +21,8 @@ from typing import Any, Union
 
 import tensorrt as trt
 import torch
-from cuda import cudart
+# from cuda import cudart
+from cuda.bindings import runtime as cudart
 
 from flux.trt.engine import (
     BaseEngine,
