@@ -15,6 +15,8 @@
 # limitations under the License.
 
 import torch
+# from cuda import cudart
+from cuda.bindings import runtime as cudart
 
 from flux.trt.engine.base_engine import BaseEngine, Engine
 from flux.trt.trt_config import VAEDecoderConfig, VAEEncoderConfig

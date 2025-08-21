@@ -193,6 +193,7 @@ def main(
             seed=opts.seed,
         )
         # divide pixel space by 16**2 to account for latent space conversion
+        import pdb; pdb.set_trace()
         timesteps = get_schedule(
             opts.num_steps,
             (x.shape[-1] * x.shape[-2]) // 4,
